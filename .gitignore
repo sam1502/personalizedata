@@ -1,6 +1,13 @@
 .idea/
 .mvn
 HELP.md
-target
 mvnw
 mvnw.cmd
+target/classes
+target/generated-test-sources
+target/generated-sources
+target/maven-status
+target/maven-archiver
+target/surefire-reports
+target/test-classes
+target/personalizeddata-0.0.1-SNAPSHOT.jar.original
