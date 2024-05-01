@@ -61,17 +61,17 @@ This project has API which provides personalized information for shoppers and pr
 
 #### Retrieve Shopper Products - Paginated
 
-- **Endpoint:** `GET /api/external/shoppers/{shopperId}/products`
+- **Endpoint:** `GET /external/shoppers/{shopperId}/products`
 - **Description:** Retrieves personalized product information by shopper with optional filtering by category, brand, and pagination support.
 - **Parameters:**
   - `{shopperId}`: The unique identifier of the shopper.
-  - `category` (optional): Filter products by category.
   - `brand` (optional): Filter products by brand.
+  - `category` (optional): Filter products by category.
   - `page` (optional, default = 1): Page number for pagination.
   - `size` (optional, default = 10, max = 100): Number of items per page.
 - **Example Request:**
   ```bash
   curl -X GET \
-    'http://localhost:8080/api/external/shoppers/S-1000/products?category=Adult&brand=Adidas&page=1&size=10'
+    'https://personalizedata.onrender.com/api/external/shoppers/S-1000/products?brand=Adidas&category=Adult&page=1&size=10'
 
 - **Response:** Returns a paginated list of personalized product information for the specified shopper, filtered by category and brand.

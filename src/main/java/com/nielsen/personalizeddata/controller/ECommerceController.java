@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.constraints.Max;
 
 @RestController
-@RequestMapping("/api/external")
+@RequestMapping("/external")
 public class ECommerceController {
 
     @Autowired
