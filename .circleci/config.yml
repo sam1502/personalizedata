@@ -12,6 +12,6 @@ jobs:
           name: Test
           command: mvn test
 workflows:
-  weatherapp:
+  dataapi:
     jobs:
       - build-and-test
