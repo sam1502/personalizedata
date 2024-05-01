@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ShopperPersonalizedProductRepository extends JpaRepository<ShopperPersonalizeProduct, Long> {
-    @Query(value = "SELECT p.product_id, p.brand, ssp.relevancy_score, ssp.shopper_id " +
+    @Query(value = "SELECT p.product_id, p.brand, ssp.relevancy_score, p.category, ssp.shopper_id " +
             "FROM product p " +
             "JOIN shopper_personalized_product ssp ON p.product_id = ssp.product_id " +
             "WHERE ssp.shopper_id=(:shopperId) " +

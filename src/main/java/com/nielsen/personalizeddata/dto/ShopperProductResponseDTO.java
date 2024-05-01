@@ -13,5 +13,6 @@ import java.util.List;
 @NoArgsConstructor
 public class ShopperProductResponseDTO {
 
+    String shopperId;
     List<PersonalizedProductDTO> products;
 }

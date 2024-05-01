@@ -45,8 +45,10 @@ public class EcommerceService {
             p.setProductId((String) result[0]);
             p.setBrand((String) result[1]);
             p.setRelevancyScore((double) result[2]);
+            p.setCategory((String) result[3]);
 
             responseDTO.setProducts(Collections.singletonList(p));
+            responseDTO.setShopperId((String) result[4]);
             responseDTOs.add(responseDTO);
         }
         return new PageImpl<>(responseDTOs, pageable, resultsPage.getTotalElements());
